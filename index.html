@@ -35,8 +35,6 @@
     <ul id="taskList"></ul>
 
     <script>
-      document.addEventListener('DOMContentLoaded', loadTasks);
-
       function addTask() {
         let taskInput = document.getElementById('taskInput');
         let taskText = taskInput.value.trim();
@@ -99,9 +97,7 @@
         displayTasks();
       }
 
-      function loadTasks() {
-        displayTasks();
-      }
+      displayTasks();
     </script>
   </body>
 </html>
